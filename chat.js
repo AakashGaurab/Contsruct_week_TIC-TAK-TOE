@@ -8,7 +8,7 @@ const moment = require("moment");
 
 
 app.get("/",(req,res)=>{
-    res.json("HELLO TO MY PROJECT");
+    res.json("HELLO TO MY PROJECT1");
 })
 const io = socketio(http_server);
 io.on("connection",(socket)=>{
