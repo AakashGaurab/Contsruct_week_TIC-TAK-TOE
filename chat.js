@@ -17,6 +17,11 @@ io.on("connection",(socket)=>{
         socket.broadcast.emit("msg_from_server",msg);
         socket.emit("msg_from_server",msg);
     })
+    
+    
+      socket.on("peer_id_from_you",(msg)=>{
+        socket.broadcast.emit("peer_id_from_server",msg);
+    })
 
 
 
